@@ -44,11 +44,11 @@ on:
         type: boolean
         default: false
       publish-dev:
-        description: "Publish dev to LuaRocks"
+        description: "Publish dev"
         type: boolean
         default: false
       publish-release:
-        description: "Publish release to LuaRocks"
+        description: "Publish release"
         type: boolean
         default: false
 
