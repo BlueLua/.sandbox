@@ -43,8 +43,12 @@ on:
         description: "Release Please"
         type: boolean
         default: false
-      luarocks-upload:
-        description: "Upload to LuaRocks"
+      publish-dev:
+        description: "Publish development version to LuaRocks"
+        type: boolean
+        default: false
+      publish-release:
+        description: "Publish release version to LuaRocks"
         type: boolean
         default: false
 
@@ -66,4 +70,6 @@ jobs:
       docs:  ${{ inputs.docs  || false }}
 
       release-please:  ${{ inputs.release-please  || false }}
-      luarocks-upload: ${{ inputs.luarocks-upload || false }}
+      publish-dev:     ${{ inputs.publish-dev     || false }}
+      publish-release: ${{ inputs.publish-release || false }}
+
